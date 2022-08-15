@@ -47,10 +47,13 @@ main {
     max-width: 832px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* Navigation Sidebar  */
 
 nav ul {
-    list-style-type: none;
     position: sticky;
     top: 2rem;
     display: flex;
@@ -131,3 +134,56 @@ code {
   }
 
 
+/* Card Styling */
+.card {
+    border: 1px solid #eee;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    transition: all ease-in-out 0.3s;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.card:hover,
+.card:focus {
+    box-shadow: -0.5rem 0.5rem 0 turquoise;
+    top: -0.5rem;
+    left: 0.5rem;
+}
+
+#css-selectors ul {
+    margin: 1.5rem auto 2.5rem;
+}
+
+#css-selectors ul > li {
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.card h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#css-selectors ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 1rem;
+}
+
+#resources a {
+    text-decoration: none;
+    color: black;
+}
+
+#resources ul{
+    margin-top: 1.5rem;
+}
+
+#resources ul > li {
+    margin-bottom: 1.5rem;
+}

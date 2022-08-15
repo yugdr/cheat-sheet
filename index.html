@@ -23,6 +23,7 @@
                     <li><a href="#css-selectors">CSS Selectors</a></li>
                     <li><a href="#flexbox">Flexbox</a></li>
                     <li><a href="#grid">Grid</a></li>
+                    <li><a href="#resources">Resources</a></li>
                 </ul>
             </nav>
             <main>
@@ -186,8 +187,115 @@
                     </code>
                 </div>
                 <!-- CSS Selectors  -->
-                <div>
-                    
+                <div id="css-selectors">
+                    <h2>CSS Selectors</h2>
+                    <ul>
+                        <li class="card">
+                            <div>
+                                <h3>Descendant Selection</h3>
+                                <p>
+                                    Descendants of an element are selected with a space between
+                                    the name of the ancestor and that of the descendant. All
+                                    descendants are selected, regardless of how many levels deep
+                                    they are within the element.
+                                </p>
+                            </div>
+                            <code>
+                                ul li { <br />
+                                    &#160;&#160;margin: 0 auto; <br />
+                                    }
+                            </code>
+                        </li>
+                        <li class="card">
+                            <div>
+                                <h3>Child Selection</h3>
+                                <p>
+                                Direct children of an element are selected using the
+                                <strong>&gt;</strong>
+                                combinator. Only elements directly beneath the ancestor will
+                                be selected.
+                            </p>        
+                            </div>
+                            <code>
+                                ul > li { <br />
+                                &#160;&#160;margin: 0 auto; <br />
+                                }
+                            </code>
+                        </li>
+                        <li class="card">
+                            <div>
+                                <h3>Combined Selection</h3>
+                                <p>
+                                    An element can be targeted based on its membership in multiple
+                                    classes. This is done similar to a descendant selection but
+                                    the whitespace is omitted. The below code targets unordered
+                                    lists of the class "blue" but not any descendant elements that
+                                    may have that class.
+                                </p>
+                            </div>
+                            <code>
+                                ul.blue { <br />
+                                &#160;&#160;background-color: blue;<br />
+                                }
+                            </code>
+                        </li>
+                        <li class="card">
+                            <div>
+                                <h3>Nth Child Selection</h3>
+                                <p>
+                                    The <strong>:nth-child()</strong> pseudo-class can be used to
+                                    select elements based on their position within a group of
+                                    siblings. This can be handy for selecting first, last, or
+                                    middle elements or for selecting every nth element (for
+                                    example only even elements). A simple example is changing the
+                                    background color of even rows within a table.
+                                </p>
+                            </div>
+                            <code>
+                                tr:nth-child(2n) {<br />
+                                &#160;&#160;background-color: #eee;<br />
+                                }
+                            </code>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Resources -->
+                <div id="resources">
+                    <h2>Resources</h2>
+                    <ul>
+                        <li class="card">
+                            <a href="https://developer.mozilla.org/en-US/">
+                                <h3>MDN Web Docs</h3>
+                                <p>
+                                    Essentially the bible for all things HTML, CSS, and JavaScript.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="https://css-tricks.com/">
+                                <h3>CSS Tricks</h3>
+                                <p>
+                                    Great resource for getting a better understanding of CSS and figuring out issues big and small.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="https://caniuse.com/">
+                                <h3>Can I Use</h3>
+                                <p>
+                                    Not all browsers support all features covered in published specifications. This site lets you check the compatibility of what you intend to use.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="">
+                                <h3></h3>
+                                <p>
+
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </main>
         </div>
