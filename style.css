@@ -187,3 +187,23 @@ code {
 #resources ul > li {
     margin-bottom: 1.5rem;
 }
+
+.further-tools ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.further-tools li {
+    border: 1px solid #eee;
+    padding: 0.5rem 2.5rem;
+    margin-right: 1rem;
+    border-radius: 0.25rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.further-tools li:hover,
+.further-tools li:focus {
+    background-color: turquoise;
+}
+
