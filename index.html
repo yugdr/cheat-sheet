@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HTML & CSS Reference Sheet</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <div class="title-wrapper">
+                <h1>HTML & CSS <br> Reference Sheet</h1>
+            </div>
+        </header>
+        <div class="content-container">
+            <!-- Navigation Sidebar  -->
+            <nav>
+                <ul class="nav-wrapper">
+                    <li><a href="#chrome-shortcuts">Chrome Shortcuts</a></li>
+                    <li><a href="#vscode-shortcuts">VSCode Shortcuts</a></li>
+                    <li><a href="#meta-tag">Meta Tag</a></li>
+                    <li><a href="#css-selectors">CSS Selectors</a></li>
+                    <li><a href="#flexbox">Flexbox</a></li>
+                    <li><a href="#grid">Grid</a></li>
+                </ul>
+            </nav>
+            <main>
+                <!-- Chrome Shortcuts  -->
+                <div id="chrome-shortcuts">
+                    <div class="table-healine">
+                        <h2>Chrome Shortcuts</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td><h3>Command</h3></td>
+                                <td><h3>Key</h3></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Neues Fenster öffnen und schließen</td>
+                                <td>Strg + N; Strg + Umschalttaste + W</td>
+                            </tr>
+                            <tr>
+                                <td>Inkognito-Modus</td>
+                                <td>Strg + Umschalttaste + N</td>
+                            </tr>
+                            <tr>
+                                <td>Durchwechseln</td>
+                                <td>Strg + [Zahl]</td>
+                            </tr>
+                            <tr>
+                                <td>Den aktuellen Tab schließen Sie</td>
+                                <td>Strg + W</td>
+                            </tr>
+                            <tr>
+                                <td>Zurücksetzen des Zooms</td>
+                                <td>Strg + 0</td>
+                            </tr>
+                            <tr>
+                                <td>Browserdaten löschen</td>
+                                <td>Strg + Umschalttaste + entf</td>
+                            </tr>
+                            <tr>
+                                <td>Zu Downloads</td>
+                                <td>Strg + J</td>
+                            </tr>
+                            <tr>
+                                <td>Browserverlauf Öffnen</td>
+                                <td>Strg + H</td>
+                            </tr>
+                            <tr>
+                                <td>Adressleiste </td>
+                                <td>Strg + L</td>
+                            </tr>
+                            <tr>
+                                <td>Die aktuelle Website zum Lesezeichen</td>
+                                <td>Strg + D</td>
+                            </tr>
+                            <tr>
+                                <td>Fenster minimimeren und wieder vergrößern</td>
+                                <td>win + M; Alt + Tab</td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <!-- VSCode Shortcuts  -->
+                <div id="vscode-shortcuts">
+                    <div class="table-headline">
+                        <h2>VSCode Shortcuts</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td><h3>Command</h3></td>
+                                <td><h3>Key</h3></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Delete Line</td>
+                                <td>Ctrl+Shift+K</td>
+                            </tr>
+                            <tr>
+                                <td>Insert Line Below</td>
+                                <td>Ctrl+Enter</td>
+                            </tr>
+                            <tr>
+                                <td>Insert Line Above</td>
+                                <td>Ctrl+Shift+Enter</td>
+                            </tr>
+                            <tr>
+                                <td>Move Line Up/Down</td>
+                                <td>Alt+Up/Down</td>
+                            </tr>
+                            <tr>
+                                <td>Copy Line Up/Down</td>
+                                <td>Shift+Alt+Up/Down</td>
+                            </tr>
+                            <tr>
+                                <td>Redo</td>
+                                <td>Ctrl+Y</td>
+                            </tr>
+                            <tr>
+                                <td>Add Selection To Next Find Match</td>
+                                <td>Ctrl+D</td>
+                            </tr>
+                            <tr>
+                                <td>Select current line</td>
+                                <td>Ctrl+L</td>
+                            </tr>
+                            <tr>
+                                <td>Jump to matching bracket</td>
+                                <td>Ctrl+Shift+\</td>
+                            </tr>
+                            <tr>
+                                <td>Go to Beginning/End of Line</td>
+                                <td>Home/End</td>
+                            </tr>
+                            <tr>
+                                <td>Go to Beginning/End of File</td>
+                                <td>Ctrl+Home/End</td>
+                            </tr>
+                            <tr>
+                                <td>Scroll Line Up/Down</td>
+                                <td>Ctrl+Up/Down</td>
+                            </tr>
+                            <tr>
+                                <td>Add/Remove Line Comment</td>
+                                <td>Ctrl+K</td>
+                            </tr>
+                            <tr>
+                                <td>Find</td>
+                                <td>Ctrl+F</td>
+                            </tr>
+                            <tr>
+                                <td>Find Next</td>
+                                <td>Enter</td>
+                            </tr>
+                            <tr>
+                                <td>Find Previous</td>
+                                <td>Shift+Enter</td>
+                            </tr>
+                            <tr>
+                                <td>Toggle Word Wrap</td>
+                                <td>Alt+Z</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Meta tag -->
+                <div id="meta-tag">
+                    <div class="headlin-wrapper">
+                        <h2>Meta Tag</h2>
+                    </div>
+                    <code>
+                        &lt;head &gt;<br>
+                            &nbsp;  &nbsp;  &nbsp;  &nbsp; &lt;meta charset="UTF-8"&gt;<br>
+                            &nbsp;  &nbsp;  &nbsp;  &nbsp; &lt;meta name="description" content="Free Web tutorials"&gt;<br>
+                            &nbsp;  &nbsp;  &nbsp;  &nbsp; &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;<br>
+                            &nbsp;  &nbsp;  &nbsp;  &nbsp; &lt;meta name="author" content="John Doe"&gt;<br>
+                            &nbsp;  &nbsp;  &nbsp;  &nbsp; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                        &lt;/head&gt;<br>
+                    </code>
+                </div>
+                <!-- CSS Selectors  -->
+                <div>
+                    
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

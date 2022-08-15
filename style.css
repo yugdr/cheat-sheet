@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+header {
+    background-image: url('images/hero_bg.svg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-position: top right;
+    background-color: rgb(23,29,35);
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content-container {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 5rem auto 0;
+    display: grid;
+    grid-template-columns: auto minmax(min-content, 1fr);
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+.title-wrapper {
+    position: sticky;
+    top: 10%;
+}
+
+main {
+    grid-column: 2;
+    padding: 0 1rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 832px;
+}
+
+/* Navigation Sidebar  */
+
+nav ul {
+    list-style-type: none;
+    position: sticky;
+    top: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+nav ul > li {
+    margin-bottom: 0.5rem;
+    width: 12.5rem;
+}
+
+nav ul > li:last-child {
+    margin-bottom: 0;
+}
+
+.nav-wrapper a {
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+    display: block;
+    border: 1px solid turquoise;
+    color: black;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+}
+
+.nav-wrapper a:active,
+.nav-wrapper a:focus,
+.nav-wrapper a:hover {
+  background-color: turquoise;
+  color: black;
+}
+
+/* Tabel Styling */
+table {
+    border: 1px solid #eee;
+    border-spacing: 0;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+tr:nth-child(2n){
+    background: rgba(23, 29, 35, 0.05);
+}
+
+tr:hover,
+tr:nth-child(2n):hover {
+  background-color: rgba(23, 29, 35, 0.15);
+}
+
+thead {
+    background-color: rgb(23, 29, 35, 0.15);
+}
+
+thead h3 {
+    margin: 1rem auto;
+}
+
+/* Code Block Styling */
+code {
+    display: block;
+    background-color: rgb(23, 29, 35);
+    color: turquoise;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    width: 100%;
+    line-height: 2;
+    margin: 1.5rem auto 2.5rem;
+  }
+
+
